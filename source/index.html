@@ -16,7 +16,7 @@
     <button class="header__menu-button button" type="button">
       <span class="visually-hidden">Открыть меню</span>
     </button>
-    <a class="header__logo-link" href="#">
+    <a class="header__logo-link link" href="#">
       <img class="header__logo-image" src="./img/logo-mobile.svg" alt="Логотип магазина Drink to go." width="32"
         height="36">
     </a>
@@ -24,24 +24,30 @@
     <nav class="header__navigation navigation">
       <ul class="navigation__site-list">
         <li class="navigation__site-item">
-          <a class="navigation__site-link" href="#">Главная</a>
+          <a class="navigation__site-link link" href="#">Главная</a>
         </li>
         <li class="navigation__site-item">
-          <a class="navigation__site-link" href="#">Каталог</a>
+          <a class="navigation__site-link link" href="#">Каталог</a>
         </li>
         <li class="navigation__site-item">
-          <a class="navigation__site-link" href="#">Доставка</a>
+          <a class="navigation__site-link link" href="#">Доставка</a>
         </li>
         <li class="navigation__site-item">
-          <a class="navigation__site-link" href="#">О нас</a>
+          <a class="navigation__site-link link" href="#">О нас</a>
         </li>
       </ul>
       <ul class="navigation__user-list">
         <li class="navigation__user-item">
-          <a class="navigation__user-link" href="#">Войти</a>
+          <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+            <use href="./img/stack.svg#user"/>
+          </svg>
+          <a class="navigation__user-link link" href="#">Войти</a>
         </li>
         <li class="navigation__user-item">
-          <a class="navigation__user-link" href="#">Корзина</a>
+          <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+            <use href="./img/stack.svg#card"/>
+          </svg>
+          <a class="navigation__user-link link" href="#">Корзина</a>
         </li>
       </ul>
     </nav>
@@ -337,21 +343,21 @@
       <!-- Pagination -->
 
       <div class="catalog__pagination pagination">
-        <a class="pagination__prev-link" href="#">
+        <a class="pagination__prev-link link" href="#">
           <span class="pagination__prev-link-text">Назад</span>
         </a>
         <ul class="pagination__pages-list">
           <li class="pagination__pages-item">
-            <a class="pagination__pages-link" href="#">1</a>
+            <a class="pagination__pages-link link" href="#">1</a>
           </li>
           <li class="pagination__pages-item">
-            <a class="pagination__pages-link pagination__pages-link--current" href="#">2</a>
+            <a class="pagination__pages-link pagination__pages-link--current link" href="#">2</a>
           </li>
           <li class="pagination__pages-item">
-            <a class="pagination__pages-link" href="#">3</a>
+            <a class="pagination__pages-link link" href="#">3</a>
           </li>
         </ul>
-        <a class="pagination__next-link" href="#">
+        <a class="pagination__next-link link" href="#">
           <span class="pagination__next-link-text">Вперёд</span>
         </a>
       </div>
@@ -367,7 +373,7 @@
   <!-- Footer -->
 
   <footer class="footer">
-    <a class="footer__logo-link" href="#">
+    <a class="footer__logo-link link" href="#">
       <img class="logo-image" src="" alt="Логотип магазина Drink to go.">
     </a>
     <ul class="footer__social social">
