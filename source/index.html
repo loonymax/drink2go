@@ -24,16 +24,16 @@
     <nav class="header__navigation navigation">
       <ul class="navigation__site-list">
         <li class="navigation__site-item">
-          <a class="bavigation__site-link" href="#">Главная</a>
+          <a class="navigation__site-link" href="#">Главная</a>
         </li>
         <li class="navigation__site-item">
-          <a class="bavigation__site-link" href="#">Каталог</a>
+          <a class="navigation__site-link" href="#">Каталог</a>
         </li>
         <li class="navigation__site-item">
-          <a class="bavigation__site-link" href="#">Доставка</a>
+          <a class="navigation__site-link" href="#">Доставка</a>
         </li>
         <li class="navigation__site-item">
-          <a class="bavigation__site-link" href="#">О нас</a>
+          <a class="navigation__site-link" href="#">О нас</a>
         </li>
       </ul>
       <ul class="navigation__user-list">
@@ -208,7 +208,7 @@
           </p>
           <p class="form__group">
             <label class="form__checkbox-label" for="peru-coffee">Перу</label>
-            <input class="form__checkbox-input input" type="checkbox" name="coffee-countryvalue="peru" id="peru-coffee" disabled>
+            <input class="form__checkbox-input input" type="checkbox" name="coffee-country" value="peru" id="peru-coffee" disabled>
             <span class="form__checkbox-mark"></span>
           </p>
         </fieldset>
@@ -288,7 +288,7 @@
 
       <!-- Pagination -->
 
-      <div class="catalog-list__pagination pagination">
+      <div class="catalog__pagination pagination">
         <a class="pagination__prev-link" href="#">
           <span class="pagination__prev-link-text">Назад</span>
         </a>
@@ -312,6 +312,7 @@
     <!-- Map -->
 
     <section class="main__map map">
+      <h2 class="visually-hidden">Карта</h2>
     </section>
   </main>
 
@@ -385,5 +386,4 @@
 
   <script src="./js/script.js" defer></script>
 </body>
-
 </html>
