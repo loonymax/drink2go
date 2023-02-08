@@ -2,12 +2,47 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="UTF-8">
-    <title>Название проекта</title>
+    <title>Интернет-магазин кофейных напитков Drink to go</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-    <header class="header">Шапка</header>
+
+    <!-- Header  -->
+
+    <header class="header">
+      <button class="header__menu-button button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <a class="header__logo-link" href="#">
+        <img class="header__logo-image" src="./img/logo-mobile.svg" alt="Логотип магазина Drink to go." width="32" height="36">
+      </a>
+      <span class="header__description">Интернет-магазин кофейных напитков</span>
+      <nav class="header__navigation navigation">
+        <ul class="navigation__site-list">
+          <li class="navigation__site-item">
+            <a href="#" class="bavigation__site-link">Главная</a>
+          </li>
+          <li class="navigation__site-item">
+            <a href="#" class="bavigation__site-link">Каталог</a>
+          </li>
+          <li class="navigation__site-item">
+            <a href="#" class="bavigation__site-link">Доставка</a>
+          </li>
+          <li class="navigation__site-item">
+            <a href="#" class="bavigation__site-link">О нас</a>
+          </li>
+        </ul>
+        <ul class="navigation__user-list">
+          <li class="navigation__user-item">
+            <a href="#" class="navigation__user-link">Войти</a>
+          </li>
+          <li class="navigation__user-item">
+            <a href="#" class="navigation__user-link">Корзина</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
     <script src="./js/script.js" defer></script>
   </body>
