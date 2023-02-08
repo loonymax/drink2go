@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Интернет-магазин кофейных напитков Drink to go</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -52,13 +52,27 @@
   <main class="main">
     <h1 class="visually-hidden">Интернет-магазин кофейных напитков Drink to go</h1>
 
-    <!-- Product -->
+    <!-- Product slider -->
 
     <section class="main__product product">
       <h2 class="visually-hidden">Новинки магазина</h2>
       <ul class="product__list">
         <li class="product__item product-item">
-          <img class="product-item__image" src="" alt="Декаф Флэт Уайт в бежевой баночке.">
+          <picture>
+            <source media="(min-width: 1440px)"
+              srcset="./img/slider-1-desktop@1x.webp 1x, ./img/slider-1-desktop@2x.webp 2x">
+            <source media="(min-width: 768px)"
+              srcset="./img/slider-1-tablet@1x.webp 1x, ./img/slider-1-tablet@2x.webp 2x">
+            <source media="(min-width: 320px)"
+              srcset="./img/slider-1-mobile@1x.webp 1x, ./img/slider-1-mobile@2x.webp 2x">
+            <source media="(min-width: 1440px)"
+              srcset="./img/slider-1-desktop@1x.png 1x, ./img/slider-1-desktop@2x.png 2x">
+            <source media="(min-width: 768px)"
+              srcset="./img/slider-1-tablet@1x.png 1x, ./img/slider-1-tablet@2x.png 2x">
+            <img class="product-item__image" src="./img/slider-1-mobile@1x.png"
+              srcset="./img/slider-1-mobile@1x.png 1x, ./img/slider-1-mobile@2x.png 2x"
+              alt="Декаф Флэт Уайт в бежевой баночке.">
+          </picture>
           <b class="product-item__new text-features">Новинка!</b>
           <h3 class="product-item__title">Декаф Флэт Уайт</h3>
           <p class="product-item__description">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским
@@ -70,7 +84,21 @@
           </div>
         </li>
         <li class="product__item product-item">
-          <img class="product-item__image" src="" alt="Лавандовый латте в фиолетовой баночке.">
+          <picture>
+            <source media="(min-width: 1440px)"
+              srcset="./img/slider-2-desktop@1x.webp 1x, ./img/slider-2-desktop@2x.webp 2x">
+            <source media="(min-width: 768px)"
+              srcset="./img/slider-2-tablet@1x.webp 1x, ./img/slider-2-tablet@2x.webp 2x">
+            <source media="(min-width: 320px)"
+              srcset="./img/slider-2-mobile@1x.webp 1x, ./img/slider-2-mobile@2x.webp 2x">
+            <source media="(min-width: 1440px)"
+              srcset="./img/slider-2-desktop@1x.png 1x, ./img/slider-2-desktop@2x.png 2x">
+            <source media="(min-width: 768px)"
+              srcset="./img/slider-2-tablet@1x.png 1x, ./img/slider-2-tablet@2x.png 2x">
+            <img class="product-item__image" src="./img/slider-2-mobile@1x.png"
+              srcset="./img/slider-2-mobile@1x.png 1x, ./img/slider-2-mobile@2x.png 2x"
+              alt="Лавандовый латте в фиолетовой баночке.">
+          </picture>
           <b class="product-item__new text-features">Новинка!</b>
           <h3 class="product-item__title">Лавандовый Латте</h3>
           <p class="product-item__description">Невероятное сочетание перуанской высокогорной арабики с молоком ламы и
@@ -82,7 +110,21 @@
           </div>
         </li>
         <li class="product__item product-item">
-          <img class="product-item__image" src="" alt="Тройной Эспрессо в черной баночке.">
+          <picture>
+            <source media="(min-width: 1440px)"
+              srcset="./img/slider-3-desktop@1x.webp 1x, ./img/slider-3-desktop@2x.webp 2x">
+            <source media="(min-width: 768px)"
+              srcset="./img/slider-3-tablet@1x.webp 1x, ./img/slider-3-tablet@2x.webp 2x">
+            <source media="(min-width: 320px)"
+              srcset="./img/slider-3-mobile@1x.webp 1x, ./img/slider-3-mobile@2x.webp 2x">
+            <source media="(min-width: 1440px)"
+              srcset="./img/slider-3-desktop@1x.png 1x, ./img/slider-3-desktop@2x.png 2x">
+            <source media="(min-width: 768px)"
+              srcset="./img/slider-3-tablet@1x.png 1x, ./img/slider-3-tablet@2x.png 2x">
+            <img class="product-item__image" src="./img/slider-3-mobile@1x.png"
+              srcset="./img/slider-3-mobile@1x.png 1x, ./img/slider-3-mobile@2x.png 2x"
+              alt="Тройной Эспрессо в черной баночке.">
+          </picture>
           <b class="product-item__new text-features">Новинка!</b>
           <h3 class="product-item__title">Тройной Эспрессо</h3>
           <p class="product-item__description">Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо
@@ -188,27 +230,32 @@
           <legend class="form__legend">Страна произрастания</legend>
           <p class="form__group">
             <label class="form__checkbox-label" for="brasil-coffee">Бразилия</label>
-            <input class="form__checkbox-input input" type="checkbox" name="coffee-country" value="brasil" id="brasil-coffee" checked>
+            <input class="form__checkbox-input input" type="checkbox" name="coffee-country" value="brasil"
+              id="brasil-coffee" checked>
             <span class="form__checkbox-mark"></span>
           </p>
           <p class="form__group">
             <label class="form__checkbox-label" for="ethiopia-coffee">Эфиопия</label>
-            <input class="form__checkbox-input input" type="checkbox" name="coffee-country" value="ethiopia" id="ethiopia-coffee">
+            <input class="form__checkbox-input input" type="checkbox" name="coffee-country" value="ethiopia"
+              id="ethiopia-coffee">
             <span class="form__checkbox-mark"></span>
           </p>
           <p class="form__group">
             <label class="form__checkbox-label" for="colombia-coffee">Колумбия</label>
-            <input class="form__checkbox-input input" type="checkbox" name="coffee-country" value="colombia" id="colombia-coffee">
+            <input class="form__checkbox-input input" type="checkbox" name="coffee-country" value="colombia"
+              id="colombia-coffee">
             <span class="form__checkbox-mark"></span>
           </p>
           <p class="form__group">
             <label class="form__checkbox-label" for="costa-rica-coffee">Коста-Рика</label>
-            <input class="form__checkbox-input input" type="checkbox" name="coffee-country" value="costa-rica" id="costa-rica-coffee">
+            <input class="form__checkbox-input input" type="checkbox" name="coffee-country" value="costa-rica"
+              id="costa-rica-coffee">
             <span class="form__checkbox-mark"></span>
           </p>
           <p class="form__group">
             <label class="form__checkbox-label" for="peru-coffee">Перу</label>
-            <input class="form__checkbox-input input" type="checkbox" name="coffee-country" value="peru" id="peru-coffee" disabled>
+            <input class="form__checkbox-input input" type="checkbox" name="coffee-country" value="peru"
+              id="peru-coffee" disabled>
             <span class="form__checkbox-mark"></span>
           </p>
         </fieldset>
@@ -231,7 +278,8 @@
 
       <ul class="catalog__list catalog-list">
         <li class="catalog-list__item">
-          <img class="catalog-list__image" src="" alt="Декаф Флэт Уайт в бежевой баночке.">
+          <img class="product-item__image" src="./img/catalog-1@1x.jpg"
+            srcset="./img/catalog-1@1x.jpg.png 1x, ./img/catalog-1@2x.jpg 2x" alt="Декаф Флэт Уайт в бежевой баночке.">
           <h3 class="catalog-list__title">Декаф Флэт Уайт</h3>
           <p class="catalog-list__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
           <div class="catalog-list__wrapper">
@@ -240,7 +288,7 @@
           </div>
         </li>
         <li class="catalog-list__item">
-          <img class="catalog-list__image" src="" alt="Декаф Флэт Уайт в фиолетовой баночке.">
+          <img class="catalog-list__image" src="./img/catalog-2@1x.jpg" srcset="./img/catalog-2@1x.jpg 1x, ./img/catalog-2@2x.jpg 2x" alt="Декаф Флэт Уайт в фиолетовой баночке.">
           <h3 class="catalog-list__title">Декаф Флэт Уайт</h3>
           <p class="catalog-list__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
           <div class="catalog-list__wrapper">
@@ -249,7 +297,7 @@
           </div>
         </li>
         <li class="catalog-list__item">
-          <img class="catalog-list__image" src="" alt="Декаф Флэт Уайт в черной баночке.">
+          <img class="catalog-list__image" src="./img/catalog-3@1x.jpg" srcset="./img/catalog-3@1x.jpg 1x, ./img/catalog-3@2x.jpg 2x" alt="Декаф Флэт Уайт в черной баночке.">
           <h3 class="catalog-list__title">Декаф Флэт Уайт</h3>
           <p class="catalog-list__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
           <div class="catalog-list__wrapper">
@@ -258,7 +306,7 @@
           </div>
         </li>
         <li class="catalog-list__item">
-          <img class="catalog-list__image" src="" alt="Декаф Флэт Уайт в розовой баночке.">
+          <img class="catalog-list__image" src="./img/catalog-4@1x.jpg" srcset="./img/catalog-4@1x.jpg 1x, ./img/catalog-4@2x.jpg 2x" alt="Декаф Флэт Уайт в розовой баночке.">
           <h3 class="catalog-list__title">Декаф Флэт Уайт</h3>
           <p class="catalog-list__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
           <div class="catalog-list__wrapper">
@@ -267,7 +315,7 @@
           </div>
         </li>
         <li class="catalog-list__item">
-          <img class="catalog-list__image" src="" alt="Декаф Флэт Уайт в коричневой баночке.">
+          <img class="catalog-list__image" src="./img/catalog-5@1x.jpg" srcset="./img/catalog-5@1x.jpg 1x, ./img/catalog-5@2x.jpg 2x" alt="Декаф Флэт Уайт в коричневой баночке.">
           <h3 class="catalog-list__title">Декаф Флэт Уайт</h3>
           <p class="catalog-list__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
           <div class="catalog-list__wrapper">
@@ -276,7 +324,7 @@
           </div>
         </li>
         <li class="catalog-list__item">
-          <img class="catalog-list__image" src="" alt="Декаф Флэт Уайт в желтой баночке.">
+          <img class="catalog-list__image" src="./img/catalog-6@1x.jpg" srcset="./img/catalog-6@1x.jpg 1x, ./img/catalog-6@2x.jpg 2x" alt="Декаф Флэт Уайт в желтой баночке.">
           <h3 class="catalog-list__title">Декаф Флэт Уайт</h3>
           <p class="catalog-list__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
           <div class="catalog-list__wrapper">
@@ -386,4 +434,5 @@
 
   <script src="./js/script.js" defer></script>
 </body>
+
 </html>
