@@ -172,7 +172,7 @@
 
     <section class="main__features features">
       <b class="features__text text-features">Преимущества</b>
-      <h2 class="features__title title">Главные причины выбрать Drink2Go</h2>
+      <h2 class="features__title">Главные причины выбрать Drink2Go</h2>
       <ul class="features__list">
         <li class="features__item">
           <h3 class="features__item-title">Скорость</h3>
@@ -197,7 +197,7 @@
 
     <section class="main__catalog catalog">
       <b class="catalog__text text-features">Каталог</b>
-      <h2 class="catalog__title title">Каталог кофейных напитков</h2>
+      <h2 class="catalog__title">Каталог кофейных напитков</h2>
 
       <!-- Form -->
 
@@ -215,22 +215,22 @@
           <legend class="form__legend">Наличие молока</legend>
           <p class="form__group">
             <label class="form__radio-label" for="no-matter">Неважно</label>
-            <input class="form__radio-input input" type="radio" name="milk" value="no-matter" id="no-matter" checked>
+            <input class="visually-hidden" type="radio" name="milk" value="no-matter" id="no-matter" checked>
             <span class="form__radio-mark"></span>
           </p>
           <p class="form__group">
             <label class="form__radio-label" for="animals-milk">Только животное</label>
-            <input class="form__radio-input input" type="radio" name="milk" value="animals-milk" id="animals-milk">
+            <input class="visually-hidden" type="radio" name="milk" value="animals-milk" id="animals-milk">
             <span class="form__radio-mark"></span>
           </p>
           <p class="form__group">
             <label class="form__radio-label" for="vegetable-milk">Только растительное</label>
-            <input class="form__radio-input input" type="radio" name="milk" value="vegetable-milk" id="vegetable-milk">
+            <input class="visually-hidden" type="radio" name="milk" value="vegetable-milk" id="vegetable-milk">
             <span class="form__radio-mark"></span>
           </p>
           <p class="form__group">
             <label class="form__radio-label" for="no-milk">Без молока</label>
-            <input class="form__radio-input input" type="radio" name="milk" value="no-milk" id="no-milk" disabled>
+            <input class="visually-hidden" type="radio" name="milk" value="no-milk" id="no-milk" disabled>
             <span class="form__radio-mark"></span>
           </p>
         </fieldset>
@@ -241,43 +241,43 @@
           <legend class="form__legend">Страна произрастания</legend>
           <p class="form__group">
             <label class="form__checkbox-label" for="brasil-coffee">Бразилия</label>
-            <input class="form__checkbox-input input" type="checkbox" name="coffee-country" value="brasil"
+            <input class="visually-hidden" type="checkbox" name="coffee-country" value="brasil"
               id="brasil-coffee" checked>
             <span class="form__checkbox-mark"></span>
           </p>
           <p class="form__group">
             <label class="form__checkbox-label" for="ethiopia-coffee">Эфиопия</label>
-            <input class="form__checkbox-input input" type="checkbox" name="coffee-country" value="ethiopia"
+            <input class="visually-hidden" type="checkbox" name="coffee-country" value="ethiopia"
               id="ethiopia-coffee">
             <span class="form__checkbox-mark"></span>
           </p>
           <p class="form__group">
             <label class="form__checkbox-label" for="colombia-coffee">Колумбия</label>
-            <input class="form__checkbox-input input" type="checkbox" name="coffee-country" value="colombia"
+            <input class="visually-hidden" type="checkbox" name="coffee-country" value="colombia"
               id="colombia-coffee">
             <span class="form__checkbox-mark"></span>
           </p>
           <p class="form__group">
             <label class="form__checkbox-label" for="costa-rica-coffee">Коста-Рика</label>
-            <input class="form__checkbox-input input" type="checkbox" name="coffee-country" value="costa-rica"
+            <input class="visually-hidden" type="checkbox" name="coffee-country" value="costa-rica"
               id="costa-rica-coffee">
             <span class="form__checkbox-mark"></span>
           </p>
           <p class="form__group">
             <label class="form__checkbox-label" for="peru-coffee">Перу</label>
-            <input class="form__checkbox-input input" type="checkbox" name="coffee-country" value="peru"
+            <input class="visually-hidden" type="checkbox" name="coffee-country" value="peru"
               id="peru-coffee" disabled>
             <span class="form__checkbox-mark"></span>
           </p>
         </fieldset>
 
-        <button class="form__apply-button button" type="submit">Применить фильтр</button>
+        <button class="form__apply-button button button--primary" type="submit">Применить фильтр</button>
         <button class="form__clear-button button" type="reset">Сбросить фильтр</button>
       </form>
 
       <!-- Select -->
 
-      <label class="catalog__sort-label" for="catalog-select"></label>
+      <label class="catalog__sort-label" for="catalog-select">Сортировка:</label>
       <select class="catalog__sort" id="catalog-select">
         <option value="default" selected>по умолчанию</option>
         <option value="expensive-first">сначала дорогие</option>
@@ -289,13 +289,13 @@
 
       <ul class="catalog__list catalog-list">
         <li class="catalog-list__item">
-          <img class="product-item__image" src="./img/catalog-1@1x.jpg"
+          <img class="catalog-list__image" src="./img/catalog-1@1x.jpg"
             srcset="./img/catalog-1@1x.jpg.png 1x, ./img/catalog-1@2x.jpg 2x" alt="Декаф Флэт Уайт в бежевой баночке.">
           <h3 class="catalog-list__title">Декаф Флэт Уайт</h3>
           <p class="catalog-list__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
           <div class="catalog-list__wrapper">
             <b class="catalog-list__price">225₽</b>
-            <button class="catalog-list__card-button button" type="button">В корзину</button>
+            <button class="catalog-list__card-button button button--primary" type="button">В корзину</button>
           </div>
         </li>
         <li class="catalog-list__item">
@@ -305,7 +305,7 @@
           <p class="catalog-list__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
           <div class="catalog-list__wrapper">
             <b class="catalog-list__price">225₽</b>
-            <button class="catalog-list__card-button button" type="button">В корзину</button>
+            <button class="catalog-list__card-button button button--primary" type="button">В корзину</button>
           </div>
         </li>
         <li class="catalog-list__item">
@@ -315,7 +315,7 @@
           <p class="catalog-list__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
           <div class="catalog-list__wrapper">
             <b class="catalog-list__price">225₽</b>
-            <button class="catalog-list__card-button button" type="button">В корзину</button>
+            <button class="catalog-list__card-button button button--primary" type="button">В корзину</button>
           </div>
         </li>
         <li class="catalog-list__item">
@@ -325,7 +325,7 @@
           <p class="catalog-list__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
           <div class="catalog-list__wrapper">
             <b class="catalog-list__price">225₽</b>
-            <button class="catalog-list__card-button button" type="button">В корзину</button>
+            <button class="catalog-list__card-button button button--primary" type="button">В корзину</button>
           </div>
         </li>
         <li class="catalog-list__item">
@@ -335,7 +335,7 @@
           <p class="catalog-list__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
           <div class="catalog-list__wrapper">
             <b class="catalog-list__price">225₽</b>
-            <button class="catalog-list__card-button button" type="button">В корзину</button>
+            <button class="catalog-list__card-button button button--primary" type="button">В корзину</button>
           </div>
         </li>
         <li class="catalog-list__item">
@@ -345,7 +345,7 @@
           <p class="catalog-list__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
           <div class="catalog-list__wrapper">
             <b class="catalog-list__price">225₽</b>
-            <button class="catalog-list__card-button button" type="button">В корзину</button>
+            <button class="catalog-list__card-button button button--primary" type="button">В корзину</button>
           </div>
         </li>
       </ul>
