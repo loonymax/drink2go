@@ -22,6 +22,25 @@
     </a>
     <span class="header__description">Интернет-магазин кофейных напитков</span>
     <nav class="header__navigation navigation">
+      <ul class="navigation__user-list">
+        <li class="navigation__user-item">
+          <a class="navigation__user-link link" href="#">
+            <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16"
+            xmlns="http://www.w3.org/2000/svg">
+            <use href="./img/stack.svg#user" />
+          </svg>
+            <span class="navigation__user-text">Войти</span></a>
+        </li>
+        <li class="navigation__user-item">
+          <a class="navigation__user-link link" href="#">
+            <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16"
+            xmlns="http://www.w3.org/2000/svg">
+            <use href="./img/stack.svg#card" />
+          </svg>
+            <span class="navigation__user-text">Корзина</span>
+          </a>
+        </li>
+      </ul>
       <ul class="navigation__site-list">
         <li class="navigation__site-item">
           <a class="navigation__site-link link" href="#">Главная</a>
@@ -34,20 +53,6 @@
         </li>
         <li class="navigation__site-item">
           <a class="navigation__site-link link" href="#">О нас</a>
-        </li>
-      </ul>
-      <ul class="navigation__user-list">
-        <li class="navigation__user-item">
-          <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-            <use href="./img/stack.svg#user"/>
-          </svg>
-          <a class="navigation__user-link link" href="#">Войти</a>
-        </li>
-        <li class="navigation__user-item">
-          <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-            <use href="./img/stack.svg#card"/>
-          </svg>
-          <a class="navigation__user-link link" href="#">Корзина</a>
         </li>
       </ul>
     </nav>
@@ -63,7 +68,7 @@
     <section class="main__product product">
       <h2 class="visually-hidden">Новинки магазина</h2>
       <ul class="product__list">
-        <li class="product__item product-item">
+        <li class="product__item product-item product-item--first">
           <picture>
             <source media="(min-width: 1440px)"
               srcset="./img/slider-1-desktop@1x.webp 1x, ./img/slider-1-desktop@2x.webp 2x">
@@ -86,10 +91,10 @@
           <div class="product-item__wrapper">
             <span class="product-item__old-price">295₽</span>
             <span class="product-item__new-price">225₽</span>
-            <button class="product-item__button button" type="button">Заказать</button>
+            <button class="product-item__button button button--primary" type="button">Заказать</button>
           </div>
         </li>
-        <li class="product__item product-item">
+        <li class="product__item product-item product-item--second">
           <picture>
             <source media="(min-width: 1440px)"
               srcset="./img/slider-2-desktop@1x.webp 1x, ./img/slider-2-desktop@2x.webp 2x">
@@ -112,10 +117,10 @@
           <div class="product-item__wrapper">
             <span class="product-item__old-price">285₽</span>
             <span class="product-item__new-price">265₽</span>
-            <button class="product-item__button button" type="button">Заказать</button>
+            <button class="product-item__button button button--primary" type="button">Заказать</button>
           </div>
         </li>
-        <li class="product__item product-item">
+        <li class="product__item product-item product-item--third">
           <picture>
             <source media="(min-width: 1440px)"
               srcset="./img/slider-3-desktop@1x.webp 1x, ./img/slider-3-desktop@2x.webp 2x">
@@ -138,7 +143,7 @@
           <div class="product-item__wrapper">
             <span class="product-item__old-price">395₽</span>
             <span class="product-item__new-price">375₽</span>
-            <button class="product-item__button button" type="button">Заказать</button>
+            <button class="product-item__button button button--primary" type="button">Заказать</button>
           </div>
         </li>
       </ul>
@@ -152,13 +157,13 @@
       </div>
       <ul class="product__pagination-list">
         <li class="product__pagination-item">
-          <button class="product__pagination-button" type="button"></button>
+          <button class="product__pagination-button button" type="button"></button>
         </li>
         <li class="product__pagination-item">
-          <button class="product__pagination-button" type="button"></button>
+          <button class="product__pagination-button button" type="button"></button>
         </li>
         <li class="product__pagination-item">
-          <button class="product__pagination-button" type="button"></button>
+          <button class="product__pagination-button button" type="button"></button>
         </li>
       </ul>
     </section>
@@ -294,7 +299,8 @@
           </div>
         </li>
         <li class="catalog-list__item">
-          <img class="catalog-list__image" src="./img/catalog-2@1x.jpg" srcset="./img/catalog-2@1x.jpg 1x, ./img/catalog-2@2x.jpg 2x" alt="Декаф Флэт Уайт в фиолетовой баночке.">
+          <img class="catalog-list__image" src="./img/catalog-2@1x.jpg"
+            srcset="./img/catalog-2@1x.jpg 1x, ./img/catalog-2@2x.jpg 2x" alt="Декаф Флэт Уайт в фиолетовой баночке.">
           <h3 class="catalog-list__title">Декаф Флэт Уайт</h3>
           <p class="catalog-list__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
           <div class="catalog-list__wrapper">
@@ -303,7 +309,8 @@
           </div>
         </li>
         <li class="catalog-list__item">
-          <img class="catalog-list__image" src="./img/catalog-3@1x.jpg" srcset="./img/catalog-3@1x.jpg 1x, ./img/catalog-3@2x.jpg 2x" alt="Декаф Флэт Уайт в черной баночке.">
+          <img class="catalog-list__image" src="./img/catalog-3@1x.jpg"
+            srcset="./img/catalog-3@1x.jpg 1x, ./img/catalog-3@2x.jpg 2x" alt="Декаф Флэт Уайт в черной баночке.">
           <h3 class="catalog-list__title">Декаф Флэт Уайт</h3>
           <p class="catalog-list__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
           <div class="catalog-list__wrapper">
@@ -312,7 +319,8 @@
           </div>
         </li>
         <li class="catalog-list__item">
-          <img class="catalog-list__image" src="./img/catalog-4@1x.jpg" srcset="./img/catalog-4@1x.jpg 1x, ./img/catalog-4@2x.jpg 2x" alt="Декаф Флэт Уайт в розовой баночке.">
+          <img class="catalog-list__image" src="./img/catalog-4@1x.jpg"
+            srcset="./img/catalog-4@1x.jpg 1x, ./img/catalog-4@2x.jpg 2x" alt="Декаф Флэт Уайт в розовой баночке.">
           <h3 class="catalog-list__title">Декаф Флэт Уайт</h3>
           <p class="catalog-list__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
           <div class="catalog-list__wrapper">
@@ -321,7 +329,8 @@
           </div>
         </li>
         <li class="catalog-list__item">
-          <img class="catalog-list__image" src="./img/catalog-5@1x.jpg" srcset="./img/catalog-5@1x.jpg 1x, ./img/catalog-5@2x.jpg 2x" alt="Декаф Флэт Уайт в коричневой баночке.">
+          <img class="catalog-list__image" src="./img/catalog-5@1x.jpg"
+            srcset="./img/catalog-5@1x.jpg 1x, ./img/catalog-5@2x.jpg 2x" alt="Декаф Флэт Уайт в коричневой баночке.">
           <h3 class="catalog-list__title">Декаф Флэт Уайт</h3>
           <p class="catalog-list__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
           <div class="catalog-list__wrapper">
@@ -330,7 +339,8 @@
           </div>
         </li>
         <li class="catalog-list__item">
-          <img class="catalog-list__image" src="./img/catalog-6@1x.jpg" srcset="./img/catalog-6@1x.jpg 1x, ./img/catalog-6@2x.jpg 2x" alt="Декаф Флэт Уайт в желтой баночке.">
+          <img class="catalog-list__image" src="./img/catalog-6@1x.jpg"
+            srcset="./img/catalog-6@1x.jpg 1x, ./img/catalog-6@2x.jpg 2x" alt="Декаф Флэт Уайт в желтой баночке.">
           <h3 class="catalog-list__title">Декаф Флэт Уайт</h3>
           <p class="catalog-list__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
           <div class="catalog-list__wrapper">

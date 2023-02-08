@@ -5,16 +5,38 @@
 
 .navigation__site-item {
   list-style-type: none;
-}
 
-.navigation__user-list {
-  list-style-type: none;
+  border-bottom: 1px solid @secondary;
+
+  &:first-child {
+  border-top: 1px solid @secondary;
+  }
 }
 
 .navigation__site-link {
   display: block;
 
-  text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
+
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.navigation__user-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.navigation__user-link {
+  display: block;
+
+  background-color: lightsteelblue;
+  padding: 22px;
+}
+
+.navigation__user-text {
+  display: none;
 }
