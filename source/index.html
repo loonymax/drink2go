@@ -13,12 +13,13 @@
   <!-- Header  -->
 
   <header class="header">
-    <button class="header__menu-button button" type="button">
-      <span class="visually-hidden">Открыть меню</span>
-    </button>
     <a class="header__logo-link link" href="#">
-      <img class="header__logo-image" src="./img/logo-mobile.svg" alt="Логотип магазина Drink to go." width="32"
-        height="36">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="./img/logo-long.svg">
+        <source media="(min-width: 768px)" srcset="./img/logo-short.svg">
+        <img class="header__logo-image" src="./img/logo-mobile.svg" alt="Логотип магазина Drink to go." width="32"
+          height="36">
+      </picture>
     </a>
     <span class="header__description">Интернет-магазин кофейных напитков</span>
     <nav class="header__navigation navigation">
@@ -26,24 +27,29 @@
         <li class="navigation__user-item">
           <a class="navigation__user-link link" href="#">
             <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16"
-            xmlns="http://www.w3.org/2000/svg">
-            <use href="./img/icons/stack.svg#user" />
-          </svg>
+              xmlns="http://www.w3.org/2000/svg">
+              <use href="./img/icons/stack.svg#user" />
+            </svg>
             <span class="navigation__user-text">Войти</span></a>
         </li>
         <li class="navigation__user-item">
           <a class="navigation__user-link link" href="#">
             <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16"
-            xmlns="http://www.w3.org/2000/svg">
-            <use href="./img/icons/stack.svg#card" />
-          </svg>
+              xmlns="http://www.w3.org/2000/svg">
+              <use href="./img/icons/stack.svg#card" />
+            </svg>
             <span class="navigation__user-text">Корзина</span>
           </a>
+        </li>
+        <li class="navigation__user-item navigation__user-item--toggle">
+          <button class="header__menu-button button" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
         </li>
       </ul>
       <ul class="navigation__site-list">
         <li class="navigation__site-item">
-          <a class="navigation__site-link link" href="#">Главная</a>
+          <a class="navigation__site-link navigation__site-link--current link" href="#">Главная</a>
         </li>
         <li class="navigation__site-item">
           <a class="navigation__site-link link" href="#">Каталог</a>
@@ -241,20 +247,18 @@
           <legend class="form__legend">Страна произрастания</legend>
           <p class="form__group">
             <label class="form__checkbox-label" for="brasil-coffee">Бразилия</label>
-            <input class="visually-hidden" type="checkbox" name="coffee-country" value="brasil"
-              id="brasil-coffee" checked>
+            <input class="visually-hidden" type="checkbox" name="coffee-country" value="brasil" id="brasil-coffee"
+              checked>
             <span class="form__checkbox-mark"></span>
           </p>
           <p class="form__group">
             <label class="form__checkbox-label" for="ethiopia-coffee">Эфиопия</label>
-            <input class="visually-hidden" type="checkbox" name="coffee-country" value="ethiopia"
-              id="ethiopia-coffee">
+            <input class="visually-hidden" type="checkbox" name="coffee-country" value="ethiopia" id="ethiopia-coffee">
             <span class="form__checkbox-mark"></span>
           </p>
           <p class="form__group">
             <label class="form__checkbox-label" for="colombia-coffee">Колумбия</label>
-            <input class="visually-hidden" type="checkbox" name="coffee-country" value="colombia"
-              id="colombia-coffee">
+            <input class="visually-hidden" type="checkbox" name="coffee-country" value="colombia" id="colombia-coffee">
             <span class="form__checkbox-mark"></span>
           </p>
           <p class="form__group">
@@ -265,8 +269,7 @@
           </p>
           <p class="form__group">
             <label class="form__checkbox-label" for="peru-coffee">Перу</label>
-            <input class="visually-hidden" type="checkbox" name="coffee-country" value="peru"
-              id="peru-coffee" disabled>
+            <input class="visually-hidden" type="checkbox" name="coffee-country" value="peru" id="peru-coffee" disabled>
             <span class="form__checkbox-mark"></span>
           </p>
         </fieldset>
