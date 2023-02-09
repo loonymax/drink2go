@@ -1,7 +1,6 @@
 .catalog {
   background-color: @background-grey-light;
-  padding-left: 6%;
-  padding-right: 6%;
+  padding: 50px 6% 44px;
 }
 
 .catalog__text {
@@ -11,6 +10,7 @@
 
 .catalog__title {
   margin: 0;
+  padding: 8px 0 20px;
 
   font-weight: 700;
   font-size: 24px;
@@ -18,7 +18,32 @@
   text-align: center;
 }
 
+.catalog__sort-wrapper {
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+
+  padding-top: 4px;
+  padding-bottom: 19px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 14px;
+    right: 10px;
+
+    width: 10px;
+    height: 6px;
+    background-image: url("../../img/sort-arrow.svg");
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
+}
+
 .catalog__sort-label {
+  padding-left: 2px;
+
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
@@ -34,4 +59,8 @@
   background-color: transparent;
   border: none;
   appearance: none;
+}
+
+.catalog__pagination {
+  padding-top: 40px;
 }

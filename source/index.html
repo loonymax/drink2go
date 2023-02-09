@@ -283,19 +283,23 @@
           </p>
         </fieldset>
 
-        <button class="form__apply-button button button--primary" type="submit">Применить фильтр</button>
+        <div class="form__button-wrapper">
+          <button class="form__apply-button button button--primary" type="submit">Применить фильтр</button>
         <button class="form__clear-button button" type="reset">Сбросить фильтр</button>
+        </div>
       </form>
 
       <!-- Select -->
 
-      <label class="catalog__sort-label" for="catalog-select">Сортировка:</label>
+      <div class="catalog__sort-wrapper">
+        <label class="catalog__sort-label" for="catalog-select">Сортировка:</label>
       <select class="catalog__sort" id="catalog-select">
         <option value="default" selected>по умолчанию</option>
         <option value="expensive-first">сначала дорогие</option>
         <option value="cheap-first">сначала дешёвые</option>
         <option value="high-rating">высокий рейтинг</option>
       </select>
+      </div>
 
       <!-- Catalog -->
 
@@ -304,7 +308,7 @@
           <img class="catalog-list__image" src="./img/catalog-1@1x.jpg"
             srcset="./img/catalog-1@1x.jpg.png 1x, ./img/catalog-1@2x.jpg 2x" alt="Декаф Флэт Уайт в бежевой баночке.">
           <h3 class="catalog-list__title">Декаф Флэт Уайт</h3>
-          <p class="catalog-list__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+          <p class="catalog-list__description">Кофе без кофеина из Эфиопии с&nbsp;натуральным фермерским молоком</p>
           <div class="catalog-list__wrapper">
             <b class="catalog-list__price">225₽</b>
             <button class="catalog-list__card-button button button--primary" type="button">В корзину</button>

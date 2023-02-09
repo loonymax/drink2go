@@ -1,5 +1,5 @@
 .form__legend {
-  padding: 0;
+  padding: 0 0 22px;
 
   font-weight: 600;
   font-size: 16px;
@@ -11,20 +11,32 @@
 }
 
 .form__radio-label {
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+
+  padding-left: 34px;
+  padding-bottom: 21px;
+}
+
+.form__checkbox-label {
+  display: block;
+  padding-left: 52px;
+  padding-bottom: 21px;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
 }
 
-.form__checkbox-label {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
+.form__button-wrapper {
+  padding: 12px 0 40px;
 }
 
 .form__apply-button {
   min-width: 160px;
-  margin: 0 auto;
+  margin: 0 auto 24px;
 
   font-size: 13px;
   padding-top: 10px;
@@ -37,6 +49,8 @@
   padding-top: 10px;
   padding-bottom: 10px;
 
+  font-size: 14px;
+  line-height: 24px;
   background-color: @white;
   color: @primary;
   border-radius: 4px;
