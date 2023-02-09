@@ -1,8 +1,16 @@
 .features {
-  padding: 50px 20px 60px;
+  padding: 52px 20px 60px;
   background-color: @white;
   color: @baseblack;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    padding: 60px 30px 100px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 100px 40px 120px;
+  }
 }
 
 .features__text {
@@ -11,30 +19,118 @@
 
 .features__title {
   margin: 0;
+  padding: 4px 0 4px;
 
   font-weight: 700;
   font-size: 24px;
   line-height: 36px;
+
+  @media (min-width: @tablet-width) {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 64px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 6px;
+  }
 }
 
 .features__list {
   margin: 0;
   padding: 0;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 50px;
+
+    padding-top: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    column-gap: 0;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 72px;
+  }
 }
 
 .features__item {
   list-style-type: none;
+
+  padding-top: 100px;
+
+  background-repeat: no-repeat;
+  background-position: 50% 28%;
+
+  &--speed {
+    background-image: url("../../img/features-clock.svg");
+  }
+
+  &--cheerfulness {
+    background-image: url("../../img/features-convenience.svg");
+  }
+
+  &--convenience {
+    background-image: url("../../img/features-cheerfulness.svg");
+  }
+
+  &--eco {
+    background-image: url("../../img/features-eco.svg");
+  }
+
+
+  @media (min-width: @tablet-width) {
+    padding-top: 0;
+    padding-left: 70px;
+
+    background-position: 0 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 318px;
+    padding-left: 0;
+    padding-top: 80px;
+
+    background-position: 50% 3%;
+  }
 }
 
 .features__item-title {
   margin: 0;
-  padding-top: 100px;
+  padding-bottom: 2px;
 
   font-weight: 700;
   font-size: 18px;
   line-height: 32px;
+
+
+  @media (min-width: @tablet-width) {
+    text-align: left;
+
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: center;
+  }
 }
 
 .features__item-text {
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 7px;
+    text-align: left;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: center;
+  }
 }
