@@ -1,72 +1,78 @@
+.product {
+  position: relative;
+}
+
 .product__list {
   margin: 0;
   padding: 0;
 }
 
-.product-item {
-  padding: 20px 20px 60px 20px;
+.product__button-prev {
+  position: absolute;
+  padding: 0;
+  height: 100%;
+  width: 20px;
+  top: 0;
+  left: 0;
 
-  list-style-type: none;
+  background-image: url("../../img/slider-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  rotate: 180deg;
 
-  &--first {
-    background-color: @background-beige;
+  @media (min-width: @tablet-width) {
+    width: 80px;
+    background-position: 50% 62%;
   }
+}
 
-  &--second {
-    background-color: @background-lavender;
+.product__button-next {
+  position: absolute;
+  padding: 0;
+  height: 100%;
+  width: 20px;
+  top: 0;
+  right: 0;
+
+  background-image: url("../../img/slider-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
+  @media (min-width: @tablet-width) {
+    width: 80px;
+    background-position: 50% 38%;
   }
-
-  &--third {
-    background-color: @background-grey;
-  }
-}
-
-.product-item__image {
-  display: block;
-  margin: 0 auto;
-}
-
-.product-item__new {
-  display: block;
-  text-align: center;
-}
-
-.product-item__title {
-  margin: 0;
-
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 48px;
-  text-align: center;
-  letter-spacing: 0.02em;
-}
-
-.product-item__description {
-  margin: 0;
-
-  text-align: center;
-}
-
-.product-item__old-price {
-  color: @primary;
-  font-size: 16px;
-  line-height: 32px;
-  text-decoration: line-through;
-}
-
-.product-item__new-price {
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 32px;
 }
 
 .product__pagination-list {
+  position: absolute;
+  display: none;
+
+  bottom: 70px;
+  left: 50%;
+  transform: translate(-56%);
   margin: 0;
   padding: 0;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    column-gap: 8px;
+  }
 }
 
 .product__pagination-item {
   list-style-type: none;
+}
 
-  background-color: @secondary;
+.product__pagination-button {
+  @media (min-width: @desktop-width) {
+    height: 4px;
+    width: 62px;
+
+    background-color: @white;
+
+    &--current {
+      background-color: @primary;
+    }
+  }
 }

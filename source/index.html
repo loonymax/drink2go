@@ -75,32 +75,37 @@
       <h2 class="visually-hidden">Новинки магазина</h2>
       <ul class="product__list">
         <li class="product__item product-item product-item--first">
-          <picture>
-            <source media="(min-width: 1440px)"
-              srcset="./img/slider-1-desktop@1x.webp 1x, ./img/slider-1-desktop@2x.webp 2x">
-            <source media="(min-width: 768px)"
-              srcset="./img/slider-1-tablet@1x.webp 1x, ./img/slider-1-tablet@2x.webp 2x">
-            <source media="(min-width: 320px)"
-              srcset="./img/slider-1-mobile@1x.webp 1x, ./img/slider-1-mobile@2x.webp 2x">
-            <source media="(min-width: 1440px)"
-              srcset="./img/slider-1-desktop@1x.png 1x, ./img/slider-1-desktop@2x.png 2x">
-            <source media="(min-width: 768px)"
-              srcset="./img/slider-1-tablet@1x.png 1x, ./img/slider-1-tablet@2x.png 2x">
-            <img class="product-item__image" src="./img/slider-1-mobile@1x.png"
-              srcset="./img/slider-1-mobile@1x.png 1x, ./img/slider-1-mobile@2x.png 2x"
-              alt="Декаф Флэт Уайт в бежевой баночке.">
-          </picture>
-          <b class="product-item__new text-features">Новинка!</b>
-          <h3 class="product-item__title">Декаф Флэт Уайт</h3>
-          <p class="product-item__description">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским
-            молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
-          <div class="product-item__wrapper">
-            <span class="product-item__old-price">295₽</span>
-            <span class="product-item__new-price">225₽</span>
-            <button class="product-item__button button button--primary" type="button">Заказать</button>
+          <div class="product-item__container">
+            <div class="product-item__image-wrapper">
+              <picture>
+                <source media="(min-width: 1440px)"
+                  srcset="./img/slider-1-desktop@1x.webp 1x, ./img/slider-1-desktop@2x.webp 2x">
+                <source media="(min-width: 768px)"
+                  srcset="./img/slider-1-tablet@1x.webp 1x, ./img/slider-1-tablet@2x.webp 2x">
+                <source media="(min-width: 320px)"
+                  srcset="./img/slider-1-mobile@1x.webp 1x, ./img/slider-1-mobile@2x.webp 2x">
+                <source media="(min-width: 1440px)"
+                  srcset="./img/slider-1-desktop@1x.png 1x, ./img/slider-1-desktop@2x.png 2x">
+                <source media="(min-width: 768px)"
+                  srcset="./img/slider-1-tablet@1x.png 1x, ./img/slider-1-tablet@2x.png 2x">
+                <img class="product-item__image" src="./img/slider-1-mobile@1x.png"
+                  srcset="./img/slider-1-mobile@1x.png 1x, ./img/slider-1-mobile@2x.png 2x"
+                  alt="Декаф Флэт Уайт в бежевой баночке.">
+              </picture>
+            </div>
+            <b class="product-item__new text-features">Новинка!</b>
+            <h3 class="product-item__title">Декаф Флэт Уайт</h3>
+            <p class="product-item__description">Свежесваренный кофе без кофеина из Эфиопии с&nbsp;натуральным
+              фермерским
+              молоком — то, что нужно для&nbsp;расслабления после тяжёлого рабочего дня</p>
+            <div class="product-item__wrapper">
+              <span class="product-item__old-price">295₽</span>
+              <span class="product-item__new-price">225₽</span>
+              <button class="product-item__button button button--primary" type="button">Заказать</button>
+            </div>
           </div>
         </li>
-        <li class="product__item product-item product-item--second">
+        <!-- <li class="product__item product-item product-item--second">
           <picture>
             <source media="(min-width: 1440px)"
               srcset="./img/slider-2-desktop@1x.webp 1x, ./img/slider-2-desktop@2x.webp 2x">
@@ -151,25 +156,29 @@
             <span class="product-item__new-price">375₽</span>
             <button class="product-item__button button button--primary" type="button">Заказать</button>
           </div>
-        </li>
+        </li> -->
       </ul>
-      <div class="product__arows-wrapper">
-        <button class="product__button-prev button" type="button">
-          <span class="visually-hidden">Предыдущий слайд</span>
-        </button>
-        <button class="product__button-next button" type="button">
-          <span class="visually-hidden">Следующий слайд</span>
-        </button>
-      </div>
+      <button class="product__button-prev button" type="button">
+        <span class="visually-hidden">Предыдущий слайд</span>
+      </button>
+      <button class="product__button-next button" type="button">
+        <span class="visually-hidden">Следующий слайд</span>
+      </button>
       <ul class="product__pagination-list">
         <li class="product__pagination-item">
-          <button class="product__pagination-button button" type="button"></button>
+          <button class="product__pagination-button product__pagination-button--current button" type="button">
+            <span class="visually-hidden">Первый слайд</span>
+          </button>
         </li>
         <li class="product__pagination-item">
-          <button class="product__pagination-button button" type="button"></button>
+          <button class="product__pagination-button button" type="button">
+            <span class="visually-hidden">Второй слайд</span>
+          </button>
         </li>
         <li class="product__pagination-item">
-          <button class="product__pagination-button button" type="button"></button>
+          <button class="product__pagination-button button" type="button">
+            <span class="visually-hidden">Третий слайд</span>
+          </button>
         </li>
       </ul>
     </section>
