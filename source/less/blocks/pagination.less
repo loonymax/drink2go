@@ -1,0 +1,42 @@
+.pagination__link {
+  display: block;
+  box-sizing: border-box;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+
+  background-color: @secondary;
+}
+
+.pagination__link-text {
+  display: none;
+}
+
+.pagination__pages-list {
+  margin: 0;
+  padding: 0;
+}
+
+.pagination__pages-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 40px;
+  height: 40px;
+
+  list-style-type: none;
+  border-radius: 4px;
+}
+
+.pagination__pages-link {
+  font-size: 16px;
+  line-height: 24px;
+  color: @primary;
+
+  &--current {
+    font-weight: 600;
+    color: @baseblack;
+  }
+}
+
