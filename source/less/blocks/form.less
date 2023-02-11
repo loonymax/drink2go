@@ -1,9 +1,47 @@
+.form {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: column;
+  }
+}
+
+.form__fieldset {
+  @media (min-width: @tablet-width) {
+    &--price {
+      width: 227px;
+    }
+
+    &--milk {
+      width: 230px;
+    }
+
+    &--country {
+      width: 197px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &--milk {
+      padding-bottom: 10px;
+    }
+  }
+}
+
 .form__legend {
   padding: 0 0 22px;
 
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 20px;
+  }
 }
 
 .form__group {
@@ -18,6 +56,10 @@
 
   padding-left: 34px;
   padding-bottom: 21px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 20px;
+  }
 }
 
 .form__checkbox-label {
@@ -28,10 +70,24 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 20px;
+  }
 }
 
 .form__button-wrapper {
   padding: 12px 0 40px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    width: 360px;
+    justify-content: space-between;
+
+    margin: 0 auto;
+    padding-right: 23px;
+    padding-top: 16px;
+  }
 }
 
 .form__apply-button {
@@ -41,6 +97,14 @@
   font-size: 13px;
   padding-top: 10px;
   padding-bottom: 10px;
+
+  @media (min-width: @tablet-width) {
+    min-width: 148px;
+    margin: 0;
+
+    font-size: 14px;
+    line-height: 24px;
+  }
 }
 
 .form__clear-button {
@@ -54,4 +118,32 @@
   background-color: @white;
   color: @primary;
   border-radius: 4px;
+
+  @media (min-width: @tablet-width) {
+    min-width: 139px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 150px;
+  }
+
+  &:hover {
+    background-color: @primary-lighter;
+    color: @white;
+  }
+
+  &:focus {
+    background-color: @primary-lighter;
+    color: @white;
+  }
+
+  &:active {
+    background-color: @primary;
+    color: @white;
+  }
+
+  &:disabled {
+    background-color: @grey-light;
+    color: @white;
+  }
 }

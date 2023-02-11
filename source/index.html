@@ -30,7 +30,8 @@
               xmlns="http://www.w3.org/2000/svg">
               <use href="./img/icons/stack.svg#user" />
             </svg>
-            <span class="navigation__user-text">Войти</span></a>
+            <span class="navigation__user-text">Войти</span>
+          </a>
         </li>
         <li class="navigation__user-item">
           <a class="navigation__user-link link" href="#">
@@ -220,13 +221,13 @@
 
         <!-- Slider -->
 
-        <fieldset class="form__fieldset fieldset">
+        <fieldset class="form__fieldset form__fieldset--price fieldset">
           <legend class="form__legend">Цена</legend>
         </fieldset>
 
         <!-- Radio -->
 
-        <fieldset class="form__fieldset fieldset">
+        <fieldset class="form__fieldset form__fieldset--milk fieldset">
           <legend class="form__legend">Наличие молока</legend>
           <p class="form__group">
             <label class="form__radio-label" for="no-matter">Неважно</label>
@@ -252,7 +253,7 @@
 
         <!-- Checkbox -->
 
-        <fieldset class="form__fieldset fieldset">
+        <fieldset class="form__fieldset form__fieldset--country fieldset">
           <legend class="form__legend">Страна произрастания</legend>
           <p class="form__group">
             <label class="form__checkbox-label" for="brasil-coffee">Бразилия</label>
@@ -285,7 +286,7 @@
 
         <div class="form__button-wrapper">
           <button class="form__apply-button button button--primary" type="submit">Применить фильтр</button>
-        <button class="form__clear-button button" type="reset">Сбросить фильтр</button>
+          <button class="form__clear-button button" type="reset">Сбросить фильтр</button>
         </div>
       </form>
 
@@ -293,72 +294,85 @@
 
       <div class="catalog__sort-wrapper">
         <label class="catalog__sort-label" for="catalog-select">Сортировка:</label>
-      <select class="catalog__sort" id="catalog-select">
-        <option value="default" selected>по умолчанию</option>
-        <option value="expensive-first">сначала дорогие</option>
-        <option value="cheap-first">сначала дешёвые</option>
-        <option value="high-rating">высокий рейтинг</option>
-      </select>
+        <select class="catalog__sort" id="catalog-select">
+          <option value="default" selected>по умолчанию</option>
+          <option value="expensive-first">сначала дорогие</option>
+          <option value="cheap-first">сначала дешёвые</option>
+          <option value="high-rating">высокий рейтинг</option>
+        </select>
       </div>
 
       <!-- Catalog -->
 
       <ul class="catalog__list catalog-list">
         <li class="catalog-list__item">
-          <img class="catalog-list__image" src="./img/catalog-1@1x.jpg"
-            srcset="./img/catalog-1@1x.jpg.png 1x, ./img/catalog-1@2x.jpg 2x" alt="Декаф Флэт Уайт в бежевой баночке.">
-          <h3 class="catalog-list__title">Декаф Флэт Уайт</h3>
-          <p class="catalog-list__description">Кофе без кофеина из Эфиопии с&nbsp;натуральным фермерским молоком</p>
+          <a class="catalog-list__link link" href="#">
+            <img class="catalog-list__image" src="./img/catalog-1@1x.jpg"
+              srcset="./img/catalog-1@1x.jpg.png 1x, ./img/catalog-1@2x.jpg 2x"
+              alt="Декаф Флэт Уайт в бежевой баночке.">
+            <h3 class="catalog-list__title">Декаф Флэт Уайт</h3>
+            <p class="catalog-list__description">Кофе без кофеина из Эфиопии с&nbsp;натуральным фермерским молоком</p>
+          </a>
           <div class="catalog-list__wrapper">
             <b class="catalog-list__price">225₽</b>
             <button class="catalog-list__card-button button button--primary" type="button">В корзину</button>
           </div>
         </li>
         <li class="catalog-list__item">
-          <img class="catalog-list__image" src="./img/catalog-2@1x.jpg"
-            srcset="./img/catalog-2@1x.jpg 1x, ./img/catalog-2@2x.jpg 2x" alt="Декаф Флэт Уайт в фиолетовой баночке.">
-          <h3 class="catalog-list__title">Декаф Флэт Уайт</h3>
-          <p class="catalog-list__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+          <a class="catalog-list__link link" href="#">
+            <img class="catalog-list__image" src="./img/catalog-2@1x.jpg"
+              srcset="./img/catalog-2@1x.jpg 1x, ./img/catalog-2@2x.jpg 2x" alt="Декаф Флэт Уайт в фиолетовой баночке.">
+            <h3 class="catalog-list__title">Декаф Флэт Уайт</h3>
+            <p class="catalog-list__description">Кофе без кофеина из Эфиопии с&nbsp;натуральным фермерским молоком</p>
+          </a>
           <div class="catalog-list__wrapper">
             <b class="catalog-list__price">225₽</b>
             <button class="catalog-list__card-button button button--primary" type="button">В корзину</button>
           </div>
         </li>
         <li class="catalog-list__item">
-          <img class="catalog-list__image" src="./img/catalog-3@1x.jpg"
-            srcset="./img/catalog-3@1x.jpg 1x, ./img/catalog-3@2x.jpg 2x" alt="Декаф Флэт Уайт в черной баночке.">
-          <h3 class="catalog-list__title">Декаф Флэт Уайт</h3>
-          <p class="catalog-list__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+          <a class="catalog-list__link link" href="#">
+            <img class="catalog-list__image" src="./img/catalog-3@1x.jpg"
+              srcset="./img/catalog-3@1x.jpg 1x, ./img/catalog-3@2x.jpg 2x" alt="Декаф Флэт Уайт в черной баночке.">
+            <h3 class="catalog-list__title">Декаф Флэт Уайт</h3>
+            <p class="catalog-list__description">Кофе без кофеина из Эфиопии с&nbsp;натуральным фермерским молоком</p>
+          </a>
           <div class="catalog-list__wrapper">
             <b class="catalog-list__price">225₽</b>
             <button class="catalog-list__card-button button button--primary" type="button">В корзину</button>
           </div>
         </li>
         <li class="catalog-list__item">
-          <img class="catalog-list__image" src="./img/catalog-4@1x.jpg"
-            srcset="./img/catalog-4@1x.jpg 1x, ./img/catalog-4@2x.jpg 2x" alt="Декаф Флэт Уайт в розовой баночке.">
-          <h3 class="catalog-list__title">Декаф Флэт Уайт</h3>
-          <p class="catalog-list__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+          <a class="catalog-list__link link" href="#">
+            <img class="catalog-list__image" src="./img/catalog-4@1x.jpg"
+              srcset="./img/catalog-4@1x.jpg 1x, ./img/catalog-4@2x.jpg 2x" alt="Декаф Флэт Уайт в розовой баночке.">
+            <h3 class="catalog-list__title">Декаф Флэт Уайт</h3>
+            <p class="catalog-list__description">Кофе без кофеина из Эфиопии с&nbsp;натуральным фермерским молоком</p>
+          </a>
           <div class="catalog-list__wrapper">
             <b class="catalog-list__price">225₽</b>
             <button class="catalog-list__card-button button button--primary" type="button">В корзину</button>
           </div>
         </li>
         <li class="catalog-list__item">
-          <img class="catalog-list__image" src="./img/catalog-5@1x.jpg"
-            srcset="./img/catalog-5@1x.jpg 1x, ./img/catalog-5@2x.jpg 2x" alt="Декаф Флэт Уайт в коричневой баночке.">
-          <h3 class="catalog-list__title">Декаф Флэт Уайт</h3>
-          <p class="catalog-list__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+          <a class="catalog-list__link link" href="#">
+            <img class="catalog-list__image" src="./img/catalog-5@1x.jpg"
+              srcset="./img/catalog-5@1x.jpg 1x, ./img/catalog-5@2x.jpg 2x" alt="Декаф Флэт Уайт в коричневой баночке.">
+            <h3 class="catalog-list__title">Декаф Флэт Уайт</h3>
+            <p class="catalog-list__description">Кофе без кофеина из Эфиопии с&nbsp;натуральным фермерским молоком</p>
+          </a>
           <div class="catalog-list__wrapper">
             <b class="catalog-list__price">225₽</b>
             <button class="catalog-list__card-button button button--primary" type="button">В корзину</button>
           </div>
         </li>
         <li class="catalog-list__item">
-          <img class="catalog-list__image" src="./img/catalog-6@1x.jpg"
-            srcset="./img/catalog-6@1x.jpg 1x, ./img/catalog-6@2x.jpg 2x" alt="Декаф Флэт Уайт в желтой баночке.">
-          <h3 class="catalog-list__title">Декаф Флэт Уайт</h3>
-          <p class="catalog-list__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+          <a class="catalog-list__link link" href="#">
+            <img class="catalog-list__image" src="./img/catalog-6@1x.jpg"
+              srcset="./img/catalog-6@1x.jpg 1x, ./img/catalog-6@2x.jpg 2x" alt="Декаф Флэт Уайт в желтой баночке.">
+            <h3 class="catalog-list__title">Декаф Флэт Уайт</h3>
+            <p class="catalog-list__description">Кофе без кофеина из Эфиопии с&nbsp;натуральным фермерским молоком</p>
+          </a>
           <div class="catalog-list__wrapper">
             <b class="catalog-list__price">225₽</b>
             <button class="catalog-list__card-button button button--primary" type="button">В корзину</button>
@@ -370,7 +384,7 @@
 
       <div class="catalog__pagination pagination">
         <a class="pagination__link pagination__link--prev link" href="#">
-          <span class="pagination__link-text">Назад</span>
+          <span class="pagination__link-text pagination__link-text--prev">Назад</span>
         </a>
         <ul class="pagination__pages-list">
           <li class="pagination__pages-item">
@@ -393,6 +407,21 @@
 
     <section class="main__map map">
       <h2 class="visually-hidden">Карта</h2>
+      <picture>
+        <source media="(min-width: 1440px)"
+        srcset="./img/map-desktop@1x.webp 1x, ./img/map-desktop@2x.webp 2x">
+      <source media="(min-width: 768px)"
+        srcset="./img/map-tablet@1x.webp 1x, ./img/map-tablet@2x.webp 2x">
+      <source media="(min-width: 320px)"
+        srcset="./img/map-mobile@1x.webp 1x, ./img/map-mobile@2x.webp 2x">
+      <source media="(min-width: 1440px)"
+        srcset="./img/map-desktop@1x.png 1x, ./img/map-desktop@2x.png 2x">
+      <source media="(min-width: 768px)"
+        srcset="./img/map-tablet@1x.png 1x, ./img/map-tablet@2x.png 2x">
+        <img class="map__image" src="./img/map-mobile@1x.jpg"
+          alt="Карта с меткой адреса: Санкт-Петербург, набережная реки Карповки, дом 5"
+          srcset="./img/map-mobile@1x.jpg 1x, ./img/map-mobile@2x.jpg 2x" width="320" height="420">
+      </picture>
     </section>
   </main>
 
