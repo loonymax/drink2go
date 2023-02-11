@@ -408,16 +408,11 @@
     <section class="main__map map">
       <h2 class="visually-hidden">Карта</h2>
       <picture>
-        <source media="(min-width: 1440px)"
-        srcset="./img/map-desktop@1x.webp 1x, ./img/map-desktop@2x.webp 2x">
-      <source media="(min-width: 768px)"
-        srcset="./img/map-tablet@1x.webp 1x, ./img/map-tablet@2x.webp 2x">
-      <source media="(min-width: 320px)"
-        srcset="./img/map-mobile@1x.webp 1x, ./img/map-mobile@2x.webp 2x">
-      <source media="(min-width: 1440px)"
-        srcset="./img/map-desktop@1x.png 1x, ./img/map-desktop@2x.png 2x">
-      <source media="(min-width: 768px)"
-        srcset="./img/map-tablet@1x.png 1x, ./img/map-tablet@2x.png 2x">
+        <source media="(min-width: 1440px)" srcset="./img/map-desktop@1x.webp 1x, ./img/map-desktop@2x.webp 2x">
+        <source media="(min-width: 768px)" srcset="./img/map-tablet@1x.webp 1x, ./img/map-tablet@2x.webp 2x">
+        <source media="(min-width: 320px)" srcset="./img/map-mobile@1x.webp 1x, ./img/map-mobile@2x.webp 2x">
+        <source media="(min-width: 1440px)" srcset="./img/map-desktop@1x.png 1x, ./img/map-desktop@2x.png 2x">
+        <source media="(min-width: 768px)" srcset="./img/map-tablet@1x.png 1x, ./img/map-tablet@2x.png 2x">
         <img class="map__image" src="./img/map-mobile@1x.jpg"
           alt="Карта с меткой адреса: Санкт-Петербург, набережная реки Карповки, дом 5"
           srcset="./img/map-mobile@1x.jpg 1x, ./img/map-mobile@2x.jpg 2x" width="320" height="420">
@@ -428,23 +423,38 @@
   <!-- Footer -->
 
   <footer class="footer">
-    <div class="footer__wrapper">
+    <div class="footer__wrapper footer__wrapper--primary">
       <a class="footer__logo-link link" href="#">
-        <img class="logo-image" src="" alt="Логотип магазина Drink to go.">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="./img/logo-long.svg">
+          <img class="logo-image" src="./img/logo-short.svg" alt="Логотип магазина Drink to go.">
+        </picture>
       </a>
       <ul class="footer__social social">
         <li class="social__item">
           <a class="social__link social__link--vk link" href="#">
+            <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg">
+              <use href="./img/icons/stack.svg#vk" />
+            </svg>
             <span class="visually-hidden">Вконтакте</span>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--pinterest link" href="#">
+            <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg">
+              <use href="./img/icons/stack.svg#pinterest" />
+            </svg>
             <span class="visually-hidden">Pinterest</span>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--ok link" href="#">
+            <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg">
+              <use href="./img/icons/stack.svg#ok" />
+            </svg>
             <span class="visually-hidden">Одноклассники</span>
           </a>
         </li>
@@ -492,7 +502,8 @@
         </li>
       </ul>
     </div>
-    <a class="footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">Разработано в HTML Academy</a>
+    <a class="footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">Разработано в <span class="footer__copyright-link">HTML Academy</span>
+    </a>
   </footer>
 
   <script src="./js/script.js" defer></script>
