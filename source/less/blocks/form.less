@@ -44,7 +44,125 @@
   }
 }
 
+
+.form__range {
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 23px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 7px;
+    margin-top: 7px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 318px;
+    margin-left: 0;
+    margin-bottom: 30px;
+  }
+
+  &--disabled {
+    filter: saturate(0);
+  }
+}
+
+.form__range-scale {
+  position: relative;
+  height: 2px;
+  background-color: @grey-light;
+  margin-bottom: 35px;
+}
+
+.form__range-bar {
+  position: absolute;
+  height: 4px;
+  left: 0;
+  right: 28px;
+  background-color: @primary-lighter;
+}
+
+.form__range-toggle {
+  box-sizing: border-box;
+  position: absolute;
+
+  width: 24px;
+  height: 24px;
+
+  background-color: @white;
+  border: 2px solid @primary-lighter;
+  border-radius: 50%;
+
+  &--min {
+    left: -1px;
+    top: -9px;
+  }
+
+  &--max {
+    right: -9px;
+    top: -9px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: @secondary;
+    outline: 2px solid @white;
+    outline-offset: -4px;
+  }
+
+  &:active {
+    background-color: @primary;
+    outline: 2px solid @white;
+    outline-offset: -4px;
+  }
+}
+
+.form__range-inputs-wrapper {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 9px;
+    height: 2px;
+    background-color: @grey;
+  }
+}
+
+.form__range-input {
+  width: 118px;
+  padding: 7px 10px;
+
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  border: 2px solid @primary-lighter;
+  border-radius: 4px;
+  text-align: center;
+  color: @baseblack;
+  appearance: textfield;
+
+  @media (min-width: @tablet-width) {
+    width: 92px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 134px;
+  }
+
+  &:hover,
+  &:focus {
+    border: 2px solid @primary-darker;
+  }
+}
+
 .form__group {
+  position: relative;
   margin: 0;
 }
 
@@ -60,6 +178,20 @@
   @media (min-width: @tablet-width) {
     padding-bottom: 20px;
   }
+}
+
+.form__radio-mark {
+  position: absolute;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+
+  width: 24px;
+  height: 24px;
+
+  background-color: @white;
+  border: 2px solid @grey;
+  border-radius: 50%;
 }
 
 .form__checkbox-label {
@@ -81,12 +213,16 @@
 
   @media (min-width: @tablet-width) {
     display: flex;
-    width: 360px;
+    width: 370px;
     justify-content: space-between;
 
     margin: 0 auto;
     padding-right: 23px;
     padding-top: 16px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 360px;
   }
 }
 

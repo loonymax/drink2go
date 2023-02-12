@@ -26,7 +26,7 @@
       <ul class="navigation__user-list">
         <li class="navigation__user-item">
           <a class="navigation__user-link link" href="#">
-            <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16"
+            <svg aria-hidden="true" focusable="false" width="16" height="16"
               xmlns="http://www.w3.org/2000/svg">
               <use href="./img/icons/stack.svg#user" />
             </svg>
@@ -35,7 +35,7 @@
         </li>
         <li class="navigation__user-item">
           <a class="navigation__user-link link" href="#">
-            <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16"
+            <svg aria-hidden="true" focusable="false" width="16" height="16"
               xmlns="http://www.w3.org/2000/svg">
               <use href="./img/icons/stack.svg#card" />
             </svg>
@@ -219,10 +219,29 @@
 
       <form class="catalog__form form" action="https://echo.htmlacademy.ru">
 
-        <!-- Slider -->
+        <!-- Range slider -->
 
         <fieldset class="form__fieldset form__fieldset--price fieldset">
           <legend class="form__legend">Цена</legend>
+          <div class="form__range">
+            <div class="form__range-scale">
+              <div class="form__range-bar">
+                <button class="form__range-toggle form__range-toggle--min button" type="button">
+                  <span class="visually-hidden">Изменить минимальную цену.</span>
+                </button>
+                <button class="form__range-toggle form__range-toggle--max button" type="button">
+                  <span class="visually-hidden">Изменить максимальную цену.</span>
+                </button>
+              </div>
+            </div>
+            <div class="form__range-inputs-wrapper">
+              <label class="form__filter-label">
+                <input class="form__range-input form__range-input" type="number" placeholder="0" name="min-price">
+              </label>
+              <label class="form__filter-label">
+                <input class="form__range-input" type="number" value="900" name="max-price">
+              </label>
+            </div>
         </fieldset>
 
         <!-- Radio -->
@@ -426,14 +445,15 @@
     <div class="footer__wrapper footer__wrapper--primary">
       <a class="footer__logo-link link" href="#">
         <picture>
-          <source media="(min-width: 1440px)" srcset="./img/logo-long.svg">
-          <img class="logo-image" src="./img/logo-short.svg" alt="Логотип магазина Drink to go.">
+          <source media="(min-width: 768px)" srcset="./img/logo-long.svg">
+          <img class="footer__logo-image" src="./img/logo-short.svg" alt="Логотип магазина Drink to go.">
         </picture>
       </a>
+      <span class="footer__description">Интернет-магазин кофейных напитков</span>
       <ul class="footer__social social">
         <li class="social__item">
           <a class="social__link social__link--vk link" href="#">
-            <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20"
+            <svg aria-hidden="true" focusable="false" width="20" height="20"
               xmlns="http://www.w3.org/2000/svg">
               <use href="./img/icons/stack.svg#vk" />
             </svg>
@@ -442,7 +462,7 @@
         </li>
         <li class="social__item">
           <a class="social__link social__link--pinterest link" href="#">
-            <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20"
+            <svg aria-hidden="true" focusable="false" width="20" height="20"
               xmlns="http://www.w3.org/2000/svg">
               <use href="./img/icons/stack.svg#pinterest" />
             </svg>
@@ -451,7 +471,7 @@
         </li>
         <li class="social__item">
           <a class="social__link social__link--ok link" href="#">
-            <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20"
+            <svg aria-hidden="true" focusable="false" width="20" height="20"
               xmlns="http://www.w3.org/2000/svg">
               <use href="./img/icons/stack.svg#ok" />
             </svg>
@@ -503,6 +523,10 @@
       </ul>
     </div>
     <a class="footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">Разработано в <span class="footer__copyright-link">HTML Academy</span>
+      <svg aria-hidden="true" focusable="false" width="16" height="16"
+      xmlns="http://www.w3.org/2000/svg">
+      <use href="./img/icons/stack.svg#html-academy" />
+    </svg>
     </a>
   </footer>
 
