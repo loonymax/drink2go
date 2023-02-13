@@ -44,10 +44,6 @@
   }
 }
 
-// .footer__logo-link {
-//   display: block;
-// }
-
 .footer__logo-image {
   @media (min-width: @desktop-width) {
     display: block;
@@ -101,6 +97,15 @@
   letter-spacing: 0.02em;
 
   text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    color: @primary-lighter;
+  }
+
+  &:active {
+    color: @primary-darker;
+  }
 }
 
 .footer__media-list {
@@ -121,6 +126,15 @@
   letter-spacing: 0.02em;
 
   text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    color: @primary-lighter;
+  }
+
+  &:active {
+    color: @primary-darker;
+  }
 }
 
 .footer__contacts-list {
@@ -179,5 +193,12 @@
     margin: 0 auto;
   }
 
-  @media (min-width: @desktop-width) {}
+  &:hover,
+  &:focus {
+    color: @primary;
+  }
+
+  &:active {
+    color: @primary-darker;
+  }
 }
