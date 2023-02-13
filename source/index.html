@@ -22,12 +22,11 @@
       </picture>
     </a>
     <span class="header__description">Интернет-магазин кофейных напитков</span>
-    <nav class="header__navigation navigation">
+    <nav class="header__navigation header__navigation--nojs navigation">
       <ul class="navigation__user-list">
         <li class="navigation__user-item">
           <a class="navigation__user-link link" href="#">
-            <svg aria-hidden="true" focusable="false" width="16" height="16"
-              xmlns="http://www.w3.org/2000/svg">
+            <svg aria-hidden="true" focusable="false" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
               <use href="./img/icons/stack.svg#user" />
             </svg>
             <span class="navigation__user-text">Войти</span>
@@ -35,15 +34,14 @@
         </li>
         <li class="navigation__user-item">
           <a class="navigation__user-link link" href="#">
-            <svg aria-hidden="true" focusable="false" width="16" height="16"
-              xmlns="http://www.w3.org/2000/svg">
+            <svg aria-hidden="true" focusable="false" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
               <use href="./img/icons/stack.svg#card" />
             </svg>
             <span class="navigation__user-text">Корзина</span>
           </a>
         </li>
         <li class="navigation__user-item navigation__user-item--toggle">
-          <button class="header__menu-button button" type="button">
+          <button class="navigation__menu-button button" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
         </li>
@@ -242,6 +240,7 @@
                 <input class="form__range-input" type="number" value="900" name="max-price">
               </label>
             </div>
+          </div>
         </fieldset>
 
         <!-- Radio -->
@@ -250,22 +249,26 @@
           <legend class="form__legend">Наличие молока</legend>
           <p class="form__group">
             <label class="form__radio-label" for="no-matter">Неважно</label>
-            <input class="form__radio-input visually-hidden" type="radio" name="milk" value="no-matter" id="no-matter" checked>
+            <input class="form__radio-input visually-hidden" type="radio" name="milk" value="no-matter" id="no-matter"
+              checked>
             <span class="form__radio-mark"></span>
           </p>
           <p class="form__group">
             <label class="form__radio-label" for="animals-milk">Только животное</label>
-            <input class="form__radio-input visually-hidden" type="radio" name="milk" value="animals-milk" id="animals-milk">
+            <input class="form__radio-input visually-hidden" type="radio" name="milk" value="animals-milk"
+              id="animals-milk">
             <span class="form__radio-mark"></span>
           </p>
           <p class="form__group">
             <label class="form__radio-label" for="vegetable-milk">Только растительное</label>
-            <input class="form__radio-input visually-hidden" type="radio" name="milk" value="vegetable-milk" id="vegetable-milk">
+            <input class="form__radio-input visually-hidden" type="radio" name="milk" value="vegetable-milk"
+              id="vegetable-milk">
             <span class="form__radio-mark"></span>
           </p>
           <p class="form__group">
             <label class="form__radio-label form__radio-label--disabled" for="no-milk">Без молока</label>
-            <input class="form__radio-input visually-hidden" type="radio" name="milk" value="no-milk" id="no-milk" disabled>
+            <input class="form__radio-input visually-hidden" type="radio" name="milk" value="no-milk" id="no-milk"
+              disabled>
             <span class="form__radio-mark"></span>
           </p>
         </fieldset>
@@ -276,18 +279,20 @@
           <legend class="form__legend">Страна произрастания</legend>
           <p class="form__group">
             <label class="form__checkbox-label" for="brasil-coffee">Бразилия</label>
-            <input class="form__checkbox-input visually-hidden" type="checkbox" name="coffee-country" value="brasil" id="brasil-coffee"
-              checked>
+            <input class="form__checkbox-input visually-hidden" type="checkbox" name="coffee-country" value="brasil"
+              id="brasil-coffee" checked>
             <span class="form__checkbox-mark"></span>
           </p>
           <p class="form__group">
             <label class="form__checkbox-label" for="ethiopia-coffee">Эфиопия</label>
-            <input class="form__checkbox-input visually-hidden" type="checkbox" name="coffee-country" value="ethiopia" id="ethiopia-coffee">
+            <input class="form__checkbox-input visually-hidden" type="checkbox" name="coffee-country" value="ethiopia"
+              id="ethiopia-coffee">
             <span class="form__checkbox-mark"></span>
           </p>
           <p class="form__group">
             <label class="form__checkbox-label" for="colombia-coffee">Колумбия</label>
-            <input class="form__checkbox-input visually-hidden" type="checkbox" name="coffee-country" value="colombia" id="colombia-coffee">
+            <input class="form__checkbox-input visually-hidden" type="checkbox" name="coffee-country" value="colombia"
+              id="colombia-coffee">
             <span class="form__checkbox-mark"></span>
           </p>
           <p class="form__group">
@@ -298,7 +303,8 @@
           </p>
           <p class="form__group">
             <label class="form__checkbox-label form__checkbox-label--disabled" for="peru-coffee">Перу</label>
-            <input class="form__checkbox-input visually-hidden" type="checkbox" name="coffee-country" value="peru" id="peru-coffee" disabled>
+            <input class="form__checkbox-input visually-hidden" type="checkbox" name="coffee-country" value="peru"
+              id="peru-coffee" disabled>
             <span class="form__checkbox-mark"></span>
           </p>
         </fieldset>
@@ -453,8 +459,7 @@
       <ul class="footer__social social">
         <li class="social__item">
           <a class="social__link social__link--vk link" href="#">
-            <svg aria-hidden="true" focusable="false" width="20" height="20"
-              xmlns="http://www.w3.org/2000/svg">
+            <svg aria-hidden="true" focusable="false" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
               <use href="./img/icons/stack.svg#vk" />
             </svg>
             <span class="visually-hidden">Вконтакте</span>
@@ -462,8 +467,7 @@
         </li>
         <li class="social__item">
           <a class="social__link social__link--pinterest link" href="#">
-            <svg aria-hidden="true" focusable="false" width="20" height="20"
-              xmlns="http://www.w3.org/2000/svg">
+            <svg aria-hidden="true" focusable="false" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
               <use href="./img/icons/stack.svg#pinterest" />
             </svg>
             <span class="visually-hidden">Pinterest</span>
@@ -471,8 +475,7 @@
         </li>
         <li class="social__item">
           <a class="social__link social__link--ok link" href="#">
-            <svg aria-hidden="true" focusable="false" width="20" height="20"
-              xmlns="http://www.w3.org/2000/svg">
+            <svg aria-hidden="true" focusable="false" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
               <use href="./img/icons/stack.svg#ok" />
             </svg>
             <span class="visually-hidden">Одноклассники</span>
@@ -523,14 +526,13 @@
       </ul>
     </div>
     <a class="footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">Разработано в HTML Academy
-      <svg aria-hidden="true" focusable="false" width="16" height="16"
-      xmlns="http://www.w3.org/2000/svg">
-      <use href="./img/icons/stack.svg#html-academy" />
-    </svg>
+      <svg aria-hidden="true" focusable="false" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+        <use href="./img/icons/stack.svg#html-academy" />
+      </svg>
     </a>
   </footer>
 
-  <script src="./js/script.js" defer></script>
+  <script src="./js/script.js" type="module" defer></script>
 </body>
 
 </html>

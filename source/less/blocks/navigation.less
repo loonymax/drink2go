@@ -1,4 +1,47 @@
 .navigation {
+  @media (max-width: (@tablet-width - 1)) {
+    &--nojs {
+      .navigation__site-list {
+        display: block;
+      }
+    }
+
+    &--opened {
+      .navigation__site-list {
+        display: block;
+      }
+
+      .navigation__menu-button {
+        &::before {
+          content: "";
+          position: absolute;
+          top: 15px;
+          left: 15px;
+          width: 15;
+          height: 1.5px;
+          background-color: @baseblack;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 15px;
+          left: 15px;
+          width: 15;
+          height: 1.5px;
+          background-color: @baseblack;
+          rotate: 90deg;
+        }
+      }
+    }
+
+    &--close {
+      .navigation__site-list {
+        display: none;
+      }
+    }
+  }
+
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: end;
@@ -6,6 +49,24 @@
 
   @media (min-width: @desktop-width) {
     justify-content: space-between;
+  }
+}
+
+.navigation__menu-button {
+  padding: 0;
+  position: relative;
+  width: 60px;
+  height: 60px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 22px;
+    width: 16px;
+    height: 1.5px;
+    background-color: @baseblack;
+    box-shadow: 0 5.5px @baseblack, 0 11px @baseblack;
   }
 }
 
