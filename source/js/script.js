@@ -1,4 +1,4 @@
 /* в этот файл добавляет скрипты*/
 import './header-menu.js';
-
-console.log('jgy');
+import './product-swiper.js';
+// import './map.js';
