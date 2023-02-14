@@ -32,4 +32,3 @@ const marker = L.marker(
 );
 
 marker.addTo(map);
-

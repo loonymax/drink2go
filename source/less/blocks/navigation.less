@@ -84,6 +84,7 @@
   }
 
   @media (min-width: @desktop-width) {
+    min-width: 600px;
     column-gap: 20px;
   }
 }
@@ -150,6 +151,7 @@
 
 .navigation__user-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: end;
 
   margin: 0;
@@ -158,11 +160,13 @@
 
   @media (min-width: @tablet-width) {
     padding-right: 20px;
+    max-width: 140px;
 
     order: 1;
   }
 
   @media (min-width: @desktop-width) {
+    max-width: 245px;
     padding-right: 0;
   }
 }
