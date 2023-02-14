@@ -81,6 +81,16 @@
 .product-item__image {
   display: block;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 476px;
+    height: 476px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 600px;
+    height: 600px;
+  }
 }
 
 .product-item__new {

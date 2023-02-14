@@ -197,7 +197,8 @@
   border-radius: 50%;
 }
 
-.form__radio-input:hover + .form__radio-mark {
+.form__radio-input:hover + .form__radio-mark,
+.form__radio-input:focus + .form__radio-mark {
   background-color: fade(@primary, 25%);
   border-color: @primary-lighter;
   outline: 2px solid @white;
@@ -261,7 +262,8 @@
   }
 }
 
-.form__checkbox-input:hover + .form__checkbox-mark {
+.form__checkbox-input:hover + .form__checkbox-mark,
+.form__checkbox-input:focus + .form__checkbox-mark {
   background-color: fade(@primary, 25%);
   border-color: @primary-lighter;
 }
