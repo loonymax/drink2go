@@ -212,10 +212,12 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
     transform: rotate(360deg);
   }
 }
+
 .swiper-virtual .swiper-slide {
   -webkit-backface-visibility: hidden;
   transform: translateZ(0);
 }
+
 .swiper-virtual.swiper-css-mode .swiper-wrapper::after {
   content: '';
   position: absolute;

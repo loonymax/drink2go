@@ -6,6 +6,8 @@
   <title>Интернет-магазин кофейных напитков Drink to go</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="vendor/leaflet/leaflet.css"  type="text/css">
+  <link rel="stylesheet" href="vendor/swiper/swiper-bundle.css" type="text/css">
 </head>
 
 <body class="page__body">
@@ -134,7 +136,7 @@
             </div>
           </div>
         </li>
-        <li class="product__item product-item product-item--third ">
+        <li class="product__item product-item product-item--third swiper-slide">
           <div class="product-item__container">
             <div class="product-item__image-wrapper">
               <picture>
@@ -166,7 +168,7 @@
           </div>
         </li>
       </ul>
-      <ul class="product__pagination-list">
+      <ul class="product__pagination-list swiper-pagination">
         <li class="product__pagination-item">
           <button class="product__pagination-button product__pagination-button--current button" type="button">
             <span class="visually-hidden">Первый слайд</span>
@@ -441,13 +443,14 @@
 
     <section class="main__map map">
       <h2 class="visually-hidden">Карта</h2>
+      <div class="map__canvas" id="map__canvas" width="100" height="100"></div>
       <picture>
         <source media="(min-width: 1440px)" srcset="./img/map-desktop@1x.webp 1x, ./img/map-desktop@2x.webp 2x">
         <source media="(min-width: 768px)" srcset="./img/map-tablet@1x.webp 1x, ./img/map-tablet@2x.webp 2x">
         <source media="(min-width: 320px)" srcset="./img/map-mobile@1x.webp 1x, ./img/map-mobile@2x.webp 2x">
         <source media="(min-width: 1440px)" srcset="./img/map-desktop@1x.png 1x, ./img/map-desktop@2x.png 2x">
         <source media="(min-width: 768px)" srcset="./img/map-tablet@1x.png 1x, ./img/map-tablet@2x.png 2x">
-        <img class="map__image" src="./img/map-mobile@1x.jpg"
+        <img class="map__image map__image--nojs" src="./img/map-mobile@1x.jpg"
           alt="Карта с меткой адреса: Санкт-Петербург, набережная реки Карповки, дом 5"
           srcset="./img/map-mobile@1x.jpg 1x, ./img/map-mobile@2x.jpg 2x" width="320" height="420">
       </picture>
@@ -541,6 +544,7 @@
     </a>
   </footer>
 
+  <script src="./vendor/leaflet/leaflet.js"></script>
   <script src="./vendor/swiper/swiper-bundle.js"></script>
   <script src="./js/script.js" type="module"></script>
 </body>
