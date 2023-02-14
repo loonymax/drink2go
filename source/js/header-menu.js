@@ -2,6 +2,7 @@ const headerToggle = document.querySelector('.navigation__menu-button');
 const navList = document.querySelector('.navigation');
 
 navList.classList.remove('navigation--nojs');
+navList.classList.add('navigation--closed');
 
 headerToggle.addEventListener('click', function () {
   if (navList.classList.contains('navigation--closed')) {
