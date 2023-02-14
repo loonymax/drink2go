@@ -1,15 +1,14 @@
 const headerToggle = document.querySelector('.navigation__menu-button');
-console.log('meemcflke');
-const navList = document.querySelector('.header__navigation');
+const navList = document.querySelector('.navigation');
 
-navList.classList.remove('header__navigation--nojs');
+navList.classList.remove('navigation--nojs');
 
 headerToggle.addEventListener('click', function () {
-  if (navList.classList.contains('header__navigation--closed')) {
-    navList.classList.remove('header__navigation--closed');
-    navList.classList.add('header__navigation--opened');
+  if (navList.classList.contains('navigation--closed')) {
+    navList.classList.remove('navigation--closed');
+    navList.classList.add('navigation--opened');
   } else {
-    navList.classList.add('header__navigation--closed');
-    navList.classList.remove('header__navigation--opened');
+    navList.classList.add('navigation--closed');
+    navList.classList.remove('navigation--opened');
   }
 });

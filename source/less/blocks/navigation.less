@@ -1,8 +1,15 @@
 .navigation {
   @media (max-width: (@tablet-width - 1)) {
+
     &--nojs {
       .navigation__site-list {
         display: block;
+      }
+    }
+
+    &--closed {
+      .navigation__site-list {
+        display: none;
       }
     }
 
@@ -15,29 +22,25 @@
         &::before {
           content: "";
           position: absolute;
-          top: 15px;
-          left: 15px;
-          width: 15;
+          top: 28px;
+          left: 22px;
+          width: 15px;
           height: 1.5px;
           background-color: @baseblack;
+          box-shadow: none;
+          rotate: 45deg;
         }
 
         &::after {
           content: "";
           position: absolute;
-          top: 15px;
-          left: 15px;
-          width: 15;
+          top: 28px;
+          right: 23px;
+          width: 15px;
           height: 1.5px;
           background-color: @baseblack;
-          rotate: 90deg;
+          rotate: -45deg;
         }
-      }
-    }
-
-    &--close {
-      .navigation__site-list {
-        display: none;
       }
     }
   }
@@ -61,7 +64,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 24px;
+    top: 23px;
     left: 22px;
     width: 16px;
     height: 1.5px;
